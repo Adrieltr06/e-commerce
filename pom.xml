@@ -28,7 +28,7 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
-		<kotlin.version>2.0.21</kotlin.version>
+		<kotlin.version>1.9.25</kotlin.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -65,8 +65,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.jetbrains.kotlin</groupId>
-			<artifactId>kotlin-stdlib-jdk8</artifactId>
-            <version>${kotlin.version}</version>
+			<artifactId>kotlin-stdlib</artifactId>
         </dependency>
 		<dependency>
 			<groupId>org.jetbrains.kotlinx</groupId>
@@ -104,12 +103,6 @@
 			<artifactId>kotlin-test-junit5</artifactId>
 			<scope>test</scope>
 		</dependency>
-        <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-test</artifactId>
-            <version>${kotlin.version}</version>
-            <scope>test</scope>
-        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -139,23 +132,6 @@
 			<plugin>
 				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-maven-plugin</artifactId>
-                <version>${kotlin.version}</version>
-                <executions>
-                    <execution>
-                        <id>compile</id>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>compile</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>test-compile</id>
-                        <phase>test-compile</phase>
-                        <goals>
-                            <goal>test-compile</goal>
-                        </goals>
-                    </execution>
-                </executions>
                 <configuration>
 					<args>
 						<arg>-Xjsr305=strict</arg>
@@ -169,7 +145,6 @@
 						<option>all-open:annotation=jakarta.persistence.MappedSuperclass</option>
 						<option>all-open:annotation=jakarta.persistence.Embeddable</option>
 					</pluginOptions>
-                    <jvmTarget>17</jvmTarget>
                 </configuration>
 				<dependencies>
 					<dependency>
