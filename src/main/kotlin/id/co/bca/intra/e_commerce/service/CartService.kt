@@ -1,6 +1,5 @@
 package id.co.bca.intra.e_commerce.service
 
-import id.co.bca.intra.e_commerce.model.Cart
 import id.co.bca.intra.e_commerce.repository.CartRepository
 import id.co.bca.intra.e_commerce.repository.ProductRepository
 import kotlinx.coroutines.reactive.awaitFirstOrNull
