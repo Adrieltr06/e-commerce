@@ -1,0 +1,17 @@
+package id.co.bca.intra.e_commerce.service
+
+import id.co.bca.intra.e_commerce.model.Cart
+import id.co.bca.intra.e_commerce.repository.CartRepository
+import id.co.bca.intra.e_commerce.repository.ProductRepository
+import kotlinx.coroutines.reactive.awaitFirstOrNull
+import org.springframework.stereotype.Service
+
+@Service
+class CartService(
+    private val cartRepository: CartRepository,
+    private val productRepository: ProductRepository
+) {
+
+    suspend fun addToCart(accountId: Long, productId: Long, quantity: Int) {
+    }
+}
