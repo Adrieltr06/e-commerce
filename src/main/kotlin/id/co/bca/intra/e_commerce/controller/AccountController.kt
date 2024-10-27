@@ -10,9 +10,12 @@ class AccountController(private val accountService: AccountService) {
 
     @PostMapping("/topup/{accountId}/{amount}")
     suspend fun topUp(@PathVariable accountId: Long, @PathVariable amount: Double) {
+        accountService.topUp(accountId, amount)
+
     }
 
     @PostMapping("/create")
-    suspend fun createUser(@RequestBody account: Account) {
+    suspend fun createUser(@RequestBody account: Account) : Account  {
+        return accountService.createUser(account)
     }
 }

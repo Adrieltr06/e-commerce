@@ -13,5 +13,12 @@ class CartService(
 ) {
 
     suspend fun addToCart(accountId: Long, productId: Long, quantity: Int) {
+        val cart = cartRepository.findByAccountId(accountId).awaitFirstOrNull()
+        val product = productRepository.findById(productId).awaitFirstOrNull()
+
+        if (cart != null && product != null) {
+            cart.products[product] = (cart.products[product] ?: 0) + quantity
+            cartRepository.save(cart).awaitFirstOrNull()
+        }
     }
 }

@@ -9,8 +9,14 @@ import org.springframework.stereotype.Service
 class AccountService(private val accountRepository: AccountRepository) {
 
     suspend fun topUp(accountId: Long, amount: Double) {
+        val account = accountRepository.findById(accountId).awaitFirstOrNull()
+        if (account != null) {
+            account.balance += amount
+            accountRepository.save(account).awaitFirstOrNull()
+        }
     }
 
     suspend fun createUser(account: Account): Account {
+        return accountRepository.save(account).awaitFirstOrNull() ?: throw Exception("Failed to create user")
     }
 }

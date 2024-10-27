@@ -9,8 +9,10 @@ import org.springframework.stereotype.Service
 class ProductService(private val productRepository: ProductRepository) {
 
     suspend fun createProduct(product: Product): Product {
+        return productRepository.save(product).awaitFirstOrNull() ?: throw Exception("Failed to create product")
     }
 
     suspend fun searchProduct(name: String): List<Product> {
+        return productRepository.findByNameContainingIgnoreCase(name).collectList().awaitFirstOrNull() ?: emptyList()
     }
 }

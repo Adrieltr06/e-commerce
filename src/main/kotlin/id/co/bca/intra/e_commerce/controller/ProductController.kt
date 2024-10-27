@@ -9,10 +9,12 @@ import org.springframework.web.bind.annotation.*
 class ProductController(private val productService: ProductService) {
 
     @PostMapping("/create")
-    suspend fun createProduct(@RequestBody product: Product) {
+    suspend fun createProduct(@RequestBody product: Product) : Product{
+        return productService.createProduct(product)
     }
 
     @GetMapping("/search/{name}")
     suspend fun searchProduct(@PathVariable name: String): List<Product> {
+        return productService.searchProduct(name)
     }
 }

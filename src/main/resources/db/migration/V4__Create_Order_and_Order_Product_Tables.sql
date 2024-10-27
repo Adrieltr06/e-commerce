@@ -7,7 +7,7 @@ CREATE TABLE orders (
     status VARCHAR(50) DEFAULT 'Pending',
     total_amount DOUBLE PRECISION,
     total_quantity INT,
-    FOREIGN KEY (account_id) REFERENCES account(id) ON DELETE CASCADE
+    FOREIGN KEY (account_id) REFERENCES accounts(id) ON DELETE CASCADE
 );
 
 -- Create the order_product join table to represent the many-to-many relationship
@@ -17,5 +17,5 @@ CREATE TABLE order_products (
     quantity INT NOT NULL,
     PRIMARY KEY (order_id, product_id),
     FOREIGN KEY (order_id) REFERENCES orders(id) ON DELETE CASCADE,
-    FOREIGN KEY (product_id) REFERENCES product(id) ON DELETE CASCADE
+    FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE
 );
