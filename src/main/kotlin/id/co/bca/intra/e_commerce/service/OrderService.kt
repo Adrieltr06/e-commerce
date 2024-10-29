@@ -12,6 +12,10 @@ class OrderService(
     private val accountRepository: AccountRepository
 ) {
 
-    suspend fun completeOrder(order: Order) {
+    suspend fun completeOrder(order: Order) : Order {
+        val account = accountRepository.findById(order.account.id).awaitFirstOrNull()
+            ?: throw Exception("Account with ID ${order.account.id} does not exist.")
+
+        return orderRepository.save(order).awaitFirstOrNull() ?: throw Exception("Failed to complete order.")
     }
 }

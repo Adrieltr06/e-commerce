@@ -1,12 +1,21 @@
 package id.co.bca.intra.e_commerce.model
 
-import jakarta.persistence.*
+import jakarta.persistence.JoinColumn
+import jakarta.persistence.JoinTable
+import jakarta.persistence.ManyToMany
+import jakarta.persistence.ManyToOne
+import org.springframework.data.annotation.Id
+import org.springframework.data.relational.core.mapping.Table
 
-@Entity
+
+//import jakarta.persistence.*
+
+//@Entity
+@Table(value = "carts")
 data class Cart(
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long,
+
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id val id: Long,
 
     @ManyToOne
     @JoinColumn(name = "account_id")
