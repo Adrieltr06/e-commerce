@@ -1,8 +1,8 @@
 package id.co.bca.intra.e_commerce.dto
 
-data class ApiResponse<T>(
+data class ApiResponse(
     val status: Int,
     val message: String,
-    val data: T? = null
+    val data: Any? = null
 )
 
