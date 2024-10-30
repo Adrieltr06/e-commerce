@@ -9,7 +9,6 @@ import org.springframework.data.relational.core.mapping.Table
 
 @Table(value = "products")
 data class Product(
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     @Id val id: Long,
     var name: String,
