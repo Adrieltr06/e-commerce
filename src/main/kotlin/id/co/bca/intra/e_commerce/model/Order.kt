@@ -12,7 +12,7 @@ import org.springframework.data.relational.core.mapping.Table
 //@Entity
 @Table(value = "orders")
 data class Order(
-    @Id val id: Long,
+    @Id val id: Long?,
 
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
 

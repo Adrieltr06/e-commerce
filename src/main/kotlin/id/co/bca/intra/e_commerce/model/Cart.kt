@@ -15,7 +15,7 @@ import org.springframework.data.relational.core.mapping.Table
 data class Cart(
 
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Id val id: Long,
+    @Id val id: Long?,
 
     @ManyToOne
     @JoinColumn(name = "account_id")
