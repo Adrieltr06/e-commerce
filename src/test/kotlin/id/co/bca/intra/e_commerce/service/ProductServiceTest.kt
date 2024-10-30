@@ -90,7 +90,7 @@ class ProductServiceTest {
             `when`(productRepository.findAll().filter{ it.name.contains("a")}).thenReturn(Flux.fromIterable(products))
 
             //Verify behavior
-            val result = productService.findAll()
+            val result = productService.searchProduct("a")
             StepVerifier.create(result)
                 .expectNext(products[0])
                 .expectNext(products[1])

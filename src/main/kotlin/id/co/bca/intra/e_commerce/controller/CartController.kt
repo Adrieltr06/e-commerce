@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*
 import reactor.core.publisher.Mono
 
 @RestController
-@RequestMapping("/cart")
+@RequestMapping("/api/carts")
 class CartController(private val cartService: CartService) {
 
     @PostMapping("/add/{accountId}/{productId}/{quantity}")

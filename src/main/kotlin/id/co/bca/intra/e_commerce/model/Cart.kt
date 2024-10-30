@@ -8,13 +8,10 @@ import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
 
 
-//import jakarta.persistence.*
-
 //@Entity
 @Table(value = "carts")
 data class Cart(
 
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id val id: Long?,
 
     @ManyToOne

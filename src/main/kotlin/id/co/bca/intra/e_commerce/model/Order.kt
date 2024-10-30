@@ -7,14 +7,10 @@ import jakarta.persistence.ManyToOne
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
 
-//import jakarta.persistence.*
-
 //@Entity
 @Table(value = "orders")
 data class Order(
     @Id val id: Long?,
-
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     @ManyToOne
     @JoinColumn(name = "account_id")
