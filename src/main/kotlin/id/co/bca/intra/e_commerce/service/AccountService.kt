@@ -12,7 +12,7 @@ import java.util.*
 @Service
 class AccountService(private val accountRepository: AccountRepository) {
 
-    suspend fun topUp(accountId: Long, amount: Double) : Mono<Account> {
+    fun topUp(accountId: Long, amount: Double) : Mono<Account> {
         return accountRepository.findById(accountId).flatMap {
             val updatedAccount = it.copy(balance = it.balance + amount)
             accountRepository.save(updatedAccount)
@@ -21,13 +21,13 @@ class AccountService(private val accountRepository: AccountRepository) {
         }
     }
 
-    suspend fun createUser(account: Account): Mono<Account> {
+    fun createUser(account: Account): Mono<Account> {
         return accountRepository.save(account).onErrorResume {
             e -> Mono.error(DatabaseException("Failed to create account", e))
         }
     }
 
-    suspend fun updateAccount(id: Long, account: Account): Mono<Account> {
+    fun updateAccount(id: Long, account: Account): Mono<Account> {
         return accountRepository.findById(id)
             .flatMap {
                 val updatedAccount = it.copy(name = it.name, address = it.address, balance = it.balance, isAdmin = it.isAdmin)
@@ -35,13 +35,13 @@ class AccountService(private val accountRepository: AccountRepository) {
             }
     }
 
-    suspend fun deleteUser(id: Long): Mono<Void> {
+    fun deleteUser(id: Long): Mono<Void> {
         return accountRepository.deleteById(id).onErrorResume{
             e -> Mono.error(DatabaseException("Failed to delete account", e))
         }
     }
 
-    suspend fun getListAccounts(): Flux<Account> = accountRepository.findAll()
+    fun getListAccounts(): Flux<Account> = accountRepository.findAll()
 
-    suspend fun getAccountById(id: Long): Mono<Account> = accountRepository.findById(id)
+    fun getAccountById(id: Long): Mono<Account> = accountRepository.findById(id)
 }

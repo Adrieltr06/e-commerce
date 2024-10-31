@@ -1,0 +1,162 @@
+2024-10-31T07:32:59.499+07:00  INFO 12564 --- [e-commerce] [main] i.c.b.i.e.ECommerceApplicationKt         : Starting ECommerceApplicationKt using Java 22.0.2 with PID 12564 (C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce\target\classes started by travi in C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce)
+2024-10-31T07:32:59.502+07:00  INFO 12564 --- [e-commerce] [main] i.c.b.i.e.ECommerceApplicationKt         : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T07:33:01.255+07:00  INFO 12564 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-31T07:33:01.262+07:00  INFO 12564 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2024-10-31T07:33:01.477+07:00  INFO 12564 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 201 ms. Found 4 R2DBC repository interfaces.
+2024-10-31T07:33:04.960+07:00  INFO 12564 --- [e-commerce] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-31T07:33:05.906+07:00  INFO 12564 --- [e-commerce] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kotlin_ecommerce (PostgreSQL 16.4)
+2024-10-31T07:33:05.985+07:00  INFO 12564 --- [e-commerce] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2024-10-31T07:33:05.991+07:00  INFO 12564 --- [e-commerce] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.032s)
+2024-10-31T07:33:06.009+07:00  INFO 12564 --- [e-commerce] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2024-10-31T07:33:06.133+07:00  INFO 12564 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2024-10-31T07:33:06.149+07:00  INFO 12564 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - Create Account Table"
+2024-10-31T07:33:06.194+07:00  INFO 12564 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - Create Product Table"
+2024-10-31T07:33:06.225+07:00  INFO 12564 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - Create Cart and Cart Product Tables"
+2024-10-31T07:33:06.245+07:00  INFO 12564 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - Create Order and Order Product Tables"
+2024-10-31T07:33:06.260+07:00  INFO 12564 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "5 - Add Indexes"
+2024-10-31T07:33:06.280+07:00  INFO 12564 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Successfully applied 5 migrations to schema "public", now at version v5 (execution time 00:00.072s)
+2024-10-31T07:33:06.856+07:00  INFO 12564 --- [e-commerce] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2024-10-31T07:33:06.867+07:00  INFO 12564 --- [e-commerce] [main] i.c.b.i.e.ECommerceApplicationKt         : Started ECommerceApplicationKt in 8.388 seconds (process running for 9.078)
+2024-10-31T07:33:22.602+07:00  INFO 14212 --- [e-commerce] [main] i.c.b.i.e.service.ProductServiceTest     : Starting ProductServiceTest using Java 22.0.2 with PID 14212 (started by travi in C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce)
+2024-10-31T07:33:22.605+07:00  INFO 14212 --- [e-commerce] [main] i.c.b.i.e.service.ProductServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T07:33:24.237+07:00  INFO 14212 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-31T07:33:24.240+07:00  INFO 14212 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2024-10-31T07:33:24.411+07:00  INFO 14212 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 166 ms. Found 4 R2DBC repository interfaces.
+2024-10-31T07:33:26.936+07:00  INFO 14212 --- [e-commerce] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-31T07:33:27.858+07:00  INFO 14212 --- [e-commerce] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kotlin_ecommerce (PostgreSQL 16.4)
+2024-10-31T07:33:27.940+07:00  INFO 14212 --- [e-commerce] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.044s)
+2024-10-31T07:33:28.003+07:00  INFO 14212 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+2024-10-31T07:33:28.006+07:00  INFO 14212 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-10-31T07:33:28.372+07:00  INFO 14212 --- [e-commerce] [main] i.c.b.i.e.service.ProductServiceTest     : Started ProductServiceTest in 6.801 seconds (process running for 10.278)
+2024-10-31T07:33:39.508+07:00  INFO 2052 --- [e-commerce] [main] i.c.b.i.e.service.ProductServiceTest     : Starting ProductServiceTest using Java 22.0.2 with PID 2052 (started by travi in C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce)
+2024-10-31T07:33:39.510+07:00  INFO 2052 --- [e-commerce] [main] i.c.b.i.e.service.ProductServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T07:33:41.138+07:00  INFO 2052 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-31T07:33:41.141+07:00  INFO 2052 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2024-10-31T07:33:41.303+07:00  INFO 2052 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 4 R2DBC repository interfaces.
+2024-10-31T07:33:43.964+07:00  INFO 2052 --- [e-commerce] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-31T07:33:44.972+07:00  INFO 2052 --- [e-commerce] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kotlin_ecommerce (PostgreSQL 16.4)
+2024-10-31T07:33:45.067+07:00  INFO 2052 --- [e-commerce] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.059s)
+2024-10-31T07:33:45.144+07:00  INFO 2052 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+2024-10-31T07:33:45.147+07:00  INFO 2052 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-10-31T07:33:45.506+07:00  INFO 2052 --- [e-commerce] [main] i.c.b.i.e.service.ProductServiceTest     : Started ProductServiceTest in 6.849 seconds (process running for 9.681)
+2024-10-31T07:35:49.222+07:00  INFO 3068 --- [e-commerce] [main] i.c.b.i.e.service.ProductServiceTest     : Starting ProductServiceTest using Java 22.0.2 with PID 3068 (started by travi in C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce)
+2024-10-31T07:35:49.225+07:00  INFO 3068 --- [e-commerce] [main] i.c.b.i.e.service.ProductServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T07:35:51.076+07:00  INFO 3068 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-31T07:35:51.081+07:00  INFO 3068 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2024-10-31T07:35:51.280+07:00  INFO 3068 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 192 ms. Found 4 R2DBC repository interfaces.
+2024-10-31T07:35:54.042+07:00  INFO 3068 --- [e-commerce] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-31T07:35:55.147+07:00  INFO 3068 --- [e-commerce] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kotlin_ecommerce (PostgreSQL 16.4)
+2024-10-31T07:35:55.249+07:00  INFO 3068 --- [e-commerce] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.060s)
+2024-10-31T07:35:55.323+07:00  INFO 3068 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+2024-10-31T07:35:55.326+07:00  INFO 3068 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-10-31T07:35:55.712+07:00  INFO 3068 --- [e-commerce] [main] i.c.b.i.e.service.ProductServiceTest     : Started ProductServiceTest in 7.384 seconds (process running for 10.204)
+2024-10-31T07:36:08.170+07:00  INFO 25800 --- [e-commerce] [main] i.c.b.i.e.service.ProductServiceTest     : Starting ProductServiceTest using Java 22.0.2 with PID 25800 (started by travi in C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce)
+2024-10-31T07:36:08.173+07:00  INFO 25800 --- [e-commerce] [main] i.c.b.i.e.service.ProductServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T07:36:09.735+07:00  INFO 25800 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-31T07:36:09.738+07:00  INFO 25800 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2024-10-31T07:36:09.910+07:00  INFO 25800 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 165 ms. Found 4 R2DBC repository interfaces.
+2024-10-31T07:36:12.959+07:00  INFO 25800 --- [e-commerce] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-31T07:36:13.965+07:00  INFO 25800 --- [e-commerce] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kotlin_ecommerce (PostgreSQL 16.4)
+2024-10-31T07:36:14.048+07:00  INFO 25800 --- [e-commerce] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.042s)
+2024-10-31T07:36:14.121+07:00  INFO 25800 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+2024-10-31T07:36:14.124+07:00  INFO 25800 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-10-31T07:36:14.443+07:00  INFO 25800 --- [e-commerce] [main] i.c.b.i.e.service.ProductServiceTest     : Started ProductServiceTest in 7.195 seconds (process running for 10.233)
+2024-10-31T07:42:21.722+07:00  INFO 11312 --- [e-commerce] [main] i.c.b.i.e.service.OrderServiceTest       : Starting OrderServiceTest using Java 22.0.2 with PID 11312 (started by travi in C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce)
+2024-10-31T07:42:21.724+07:00  INFO 11312 --- [e-commerce] [main] i.c.b.i.e.service.OrderServiceTest       : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T07:42:23.628+07:00  INFO 11312 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-31T07:42:23.632+07:00  INFO 11312 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2024-10-31T07:42:23.867+07:00  INFO 11312 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 225 ms. Found 4 R2DBC repository interfaces.
+2024-10-31T07:42:26.746+07:00  INFO 11312 --- [e-commerce] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-31T07:42:27.747+07:00  INFO 11312 --- [e-commerce] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kotlin_ecommerce (PostgreSQL 16.4)
+2024-10-31T07:42:27.846+07:00  INFO 11312 --- [e-commerce] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.056s)
+2024-10-31T07:42:27.923+07:00  INFO 11312 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+2024-10-31T07:42:27.926+07:00  INFO 11312 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-10-31T07:42:28.240+07:00  INFO 11312 --- [e-commerce] [main] i.c.b.i.e.service.OrderServiceTest       : Started OrderServiceTest in 7.423 seconds (process running for 10.141)
+2024-10-31T07:42:42.368+07:00  INFO 4628 --- [e-commerce] [main] i.c.b.i.e.service.OrderServiceTest       : Starting OrderServiceTest using Java 22.0.2 with PID 4628 (started by travi in C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce)
+2024-10-31T07:42:42.370+07:00  INFO 4628 --- [e-commerce] [main] i.c.b.i.e.service.OrderServiceTest       : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T07:42:44.156+07:00  INFO 4628 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-31T07:42:44.160+07:00  INFO 4628 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2024-10-31T07:42:44.329+07:00  INFO 4628 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 163 ms. Found 4 R2DBC repository interfaces.
+2024-10-31T07:42:47.200+07:00  INFO 4628 --- [e-commerce] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-31T07:42:48.207+07:00  INFO 4628 --- [e-commerce] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kotlin_ecommerce (PostgreSQL 16.4)
+2024-10-31T07:42:48.299+07:00  INFO 4628 --- [e-commerce] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.058s)
+2024-10-31T07:42:48.369+07:00  INFO 4628 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+2024-10-31T07:42:48.372+07:00  INFO 4628 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-10-31T07:42:48.710+07:00  INFO 4628 --- [e-commerce] [main] i.c.b.i.e.service.OrderServiceTest       : Started OrderServiceTest in 7.181 seconds (process running for 9.99)
+2024-10-31T07:43:08.899+07:00  INFO 6568 --- [e-commerce] [main] i.c.b.i.e.service.OrderServiceTest       : Starting OrderServiceTest using Java 22.0.2 with PID 6568 (started by travi in C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce)
+2024-10-31T07:43:08.901+07:00  INFO 6568 --- [e-commerce] [main] i.c.b.i.e.service.OrderServiceTest       : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T07:43:10.707+07:00  INFO 6568 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-31T07:43:10.710+07:00  INFO 6568 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2024-10-31T07:43:10.876+07:00  INFO 6568 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 160 ms. Found 4 R2DBC repository interfaces.
+2024-10-31T07:43:13.711+07:00  INFO 6568 --- [e-commerce] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-31T07:43:14.674+07:00  INFO 6568 --- [e-commerce] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kotlin_ecommerce (PostgreSQL 16.4)
+2024-10-31T07:43:14.765+07:00  INFO 6568 --- [e-commerce] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.044s)
+2024-10-31T07:43:14.836+07:00  INFO 6568 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+2024-10-31T07:43:14.839+07:00  INFO 6568 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-10-31T07:43:15.172+07:00  INFO 6568 --- [e-commerce] [main] i.c.b.i.e.service.OrderServiceTest       : Started OrderServiceTest in 7.235 seconds (process running for 9.884)
+2024-10-31T07:43:28.435+07:00  INFO 9240 --- [e-commerce] [main] i.c.b.i.e.service.OrderServiceTest       : Starting OrderServiceTest using Java 22.0.2 with PID 9240 (started by travi in C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce)
+2024-10-31T07:43:28.439+07:00  INFO 9240 --- [e-commerce] [main] i.c.b.i.e.service.OrderServiceTest       : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T07:43:30.187+07:00  INFO 9240 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-31T07:43:30.190+07:00  INFO 9240 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2024-10-31T07:43:30.356+07:00  INFO 9240 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159 ms. Found 4 R2DBC repository interfaces.
+2024-10-31T07:43:32.960+07:00  INFO 9240 --- [e-commerce] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-31T07:43:33.920+07:00  INFO 9240 --- [e-commerce] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kotlin_ecommerce (PostgreSQL 16.4)
+2024-10-31T07:43:34.037+07:00  INFO 9240 --- [e-commerce] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.072s)
+2024-10-31T07:43:34.113+07:00  INFO 9240 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+2024-10-31T07:43:34.117+07:00  INFO 9240 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-10-31T07:43:34.428+07:00  INFO 9240 --- [e-commerce] [main] i.c.b.i.e.service.OrderServiceTest       : Started OrderServiceTest in 6.814 seconds (process running for 9.911)
+2024-10-31T07:54:57.435+07:00  INFO 12440 --- [e-commerce] [main] i.c.b.i.e.service.CartServiceTest        : Starting CartServiceTest using Java 22.0.2 with PID 12440 (started by travi in C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce)
+2024-10-31T07:54:57.437+07:00  INFO 12440 --- [e-commerce] [main] i.c.b.i.e.service.CartServiceTest        : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T07:54:59.139+07:00  INFO 12440 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-31T07:54:59.142+07:00  INFO 12440 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2024-10-31T07:54:59.335+07:00  INFO 12440 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 187 ms. Found 4 R2DBC repository interfaces.
+2024-10-31T07:55:01.965+07:00  INFO 12440 --- [e-commerce] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-31T07:55:02.989+07:00  INFO 12440 --- [e-commerce] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kotlin_ecommerce (PostgreSQL 16.4)
+2024-10-31T07:55:03.093+07:00  INFO 12440 --- [e-commerce] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.058s)
+2024-10-31T07:55:03.163+07:00  INFO 12440 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+2024-10-31T07:55:03.166+07:00  INFO 12440 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-10-31T07:55:03.502+07:00  INFO 12440 --- [e-commerce] [main] i.c.b.i.e.service.CartServiceTest        : Started CartServiceTest in 6.892 seconds (process running for 9.624)
+2024-10-31T07:55:19.924+07:00  INFO 23288 --- [e-commerce] [main] i.c.b.i.e.service.CartServiceTest        : Starting CartServiceTest using Java 22.0.2 with PID 23288 (started by travi in C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce)
+2024-10-31T07:55:19.927+07:00  INFO 23288 --- [e-commerce] [main] i.c.b.i.e.service.CartServiceTest        : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T07:55:21.719+07:00  INFO 23288 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-31T07:55:21.722+07:00  INFO 23288 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2024-10-31T07:55:21.902+07:00  INFO 23288 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 174 ms. Found 4 R2DBC repository interfaces.
+2024-10-31T07:55:24.798+07:00  INFO 23288 --- [e-commerce] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-31T07:55:25.874+07:00  INFO 23288 --- [e-commerce] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kotlin_ecommerce (PostgreSQL 16.4)
+2024-10-31T07:55:25.970+07:00  INFO 23288 --- [e-commerce] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.054s)
+2024-10-31T07:55:26.049+07:00  INFO 23288 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+2024-10-31T07:55:26.052+07:00  INFO 23288 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-10-31T07:55:26.418+07:00  INFO 23288 --- [e-commerce] [main] i.c.b.i.e.service.CartServiceTest        : Started CartServiceTest in 7.293 seconds (process running for 10.504)
+2024-10-31T07:56:43.510+07:00  INFO 23932 --- [e-commerce] [main] i.c.b.i.e.service.CartServiceTest        : Starting CartServiceTest using Java 22.0.2 with PID 23932 (started by travi in C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce)
+2024-10-31T07:56:43.514+07:00  INFO 23932 --- [e-commerce] [main] i.c.b.i.e.service.CartServiceTest        : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T07:56:45.101+07:00  INFO 23932 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-31T07:56:45.103+07:00  INFO 23932 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2024-10-31T07:56:45.294+07:00  INFO 23932 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 185 ms. Found 4 R2DBC repository interfaces.
+2024-10-31T07:56:47.845+07:00  INFO 23932 --- [e-commerce] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-31T07:56:48.778+07:00  INFO 23932 --- [e-commerce] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kotlin_ecommerce (PostgreSQL 16.4)
+2024-10-31T07:56:48.850+07:00  INFO 23932 --- [e-commerce] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.044s)
+2024-10-31T07:56:48.917+07:00  INFO 23932 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+2024-10-31T07:56:48.920+07:00  INFO 23932 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-10-31T07:56:49.226+07:00  INFO 23932 --- [e-commerce] [main] i.c.b.i.e.service.CartServiceTest        : Started CartServiceTest in 6.567 seconds (process running for 9.779)
+2024-10-31T07:59:48.741+07:00  INFO 25788 --- [e-commerce] [main] i.c.b.i.e.service.AccountServiceTest     : Starting AccountServiceTest using Java 22.0.2 with PID 25788 (started by travi in C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce)
+2024-10-31T07:59:48.744+07:00  INFO 25788 --- [e-commerce] [main] i.c.b.i.e.service.AccountServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T07:59:50.378+07:00  INFO 25788 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-31T07:59:50.380+07:00  INFO 25788 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2024-10-31T07:59:50.540+07:00  INFO 25788 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 155 ms. Found 4 R2DBC repository interfaces.
+2024-10-31T07:59:53.181+07:00  INFO 25788 --- [e-commerce] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-31T07:59:54.247+07:00  INFO 25788 --- [e-commerce] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kotlin_ecommerce (PostgreSQL 16.4)
+2024-10-31T07:59:54.341+07:00  INFO 25788 --- [e-commerce] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.050s)
+2024-10-31T07:59:54.413+07:00  INFO 25788 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+2024-10-31T07:59:54.416+07:00  INFO 25788 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-10-31T07:59:54.811+07:00  INFO 25788 --- [e-commerce] [main] i.c.b.i.e.service.AccountServiceTest     : Started AccountServiceTest in 6.951 seconds (process running for 9.924)
+2024-10-31T08:01:11.864+07:00  INFO 26420 --- [e-commerce] [main] i.c.b.i.e.service.AccountServiceTest     : Starting AccountServiceTest using Java 22.0.2 with PID 26420 (started by travi in C:\Users\travi\OneDrive\Desktop\Training Kotlin Reactive\Mini Project\e-commerce)
+2024-10-31T08:01:11.867+07:00  INFO 26420 --- [e-commerce] [main] i.c.b.i.e.service.AccountServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T08:01:13.585+07:00  INFO 26420 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-31T08:01:13.589+07:00  INFO 26420 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2024-10-31T08:01:13.781+07:00  INFO 26420 --- [e-commerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 187 ms. Found 4 R2DBC repository interfaces.
+2024-10-31T08:01:16.564+07:00  INFO 26420 --- [e-commerce] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-31T08:01:17.817+07:00  INFO 26420 --- [e-commerce] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kotlin_ecommerce (PostgreSQL 16.4)
+2024-10-31T08:01:17.918+07:00  INFO 26420 --- [e-commerce] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.058s)
+2024-10-31T08:01:18.002+07:00  INFO 26420 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+2024-10-31T08:01:18.006+07:00  INFO 26420 --- [e-commerce] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-10-31T08:01:18.439+07:00  INFO 26420 --- [e-commerce] [main] i.c.b.i.e.service.AccountServiceTest     : Started AccountServiceTest in 7.596 seconds (process running for 10.404)

@@ -10,17 +10,16 @@ import reactor.core.publisher.Mono
 
 @Service
 class OrderService(
-    private val orderRepository: OrderRepository,
-    private val accountRepository: AccountRepository
+    private val orderRepository: OrderRepository
 ) {
 
-    suspend fun createOrder(order: Order) : Mono<Order> {
+    fun createOrder(order: Order) : Mono<Order> {
         return orderRepository.save(order).onErrorResume {
             e -> Mono.error(DatabaseException("Failed to create order", e))
         }
     }
 
-    suspend fun completeOrder(orderId: Long) : Mono<Order> {
+    fun completeOrder(orderId: Long) : Mono<Order> {
         return orderRepository.findById(orderId).flatMap {
             var completeOrder = it.copy(status = "Complete", products = it.products, account = it.account, id = it.id, totalQuantity = it.totalQuantity, totalAmount = it.totalAmount)
             orderRepository.save(completeOrder)
